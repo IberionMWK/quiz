@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
 @import "./variables";
+@import "./mixins";
 @import "./top";
 @import "./middleQuestion";
 @import "./bottomAnswer";
@@ -14,6 +17,6 @@
 body {
   height: 100vh;
   background: $background;
-  font-family: Heebo, sans-serif;
+  font-family: Nunito, Heebo, sans-serif;
 }
     

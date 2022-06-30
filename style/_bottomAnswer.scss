@@ -1,14 +1,11 @@
 .btns {
+  @include positioning(relative, 0, 0, 0, 0);
   display: flex;
-  position: relative;
-  top: 0px;
-  left: 0px;
   justify-content: space-around;
   margin: 3rem 1rem;
+
   .btn {
-    position: relative;
-    top: 0px;
-    left: 0px;
+    @include positioning(relative, 0, 0, 0, 0);
     cursor: pointer;
     transition: 0.3s;      
     -webkit-user-select: none;
@@ -73,12 +70,9 @@
   }
 
   .restart {
-    position: absolute;
-    top: -150px;
-    left: 50%;
+    @include positioning(absolute, -150px, 50%, -50%, 0);
     width: 64px;
     height: 64px;
-    transform: translateX(-50%);
     border: 0;
     background-color: $whiteBtnBG;
     color: $blackInactiveFont;
