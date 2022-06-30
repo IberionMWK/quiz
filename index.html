@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Quiz</title>
+</head>
+<body>
+  <div id="wrap" class="wrap">
+    <h2 class="title" >Quiz</h2>
+    <div class="progress">
+      <div id="progressBar" class="bar"></div>
+    </div> 
+    <div class="resultWrap">
+      <h1>Twój wynik:</h1>
+      <p class="result"><span id="points"></span> / <span id="allQuestionsSpan"></span></p>
+      <p id="comment" class="comment">Dobrze że jeszcze nie narobiłeś błędów ortograficznych przy zaznaczaniu odpowiedzi.
+      </p>
+    </div>
+    <div id="questionWrap" class="questionWrap">
+
+      <h3 class="question" id="questionText">What shoud you do when approaching a road construction work zone?</h3>
+      <div class="answers">
+        <span>A</span><p id="aField">Prepare to slow down or stop.</p>
+        <span>B</span><p id="bField">Prepare to watch the ongoing</p>
+        <span>C</span><p id="cField">Close the distance between you and any vehicle ahead of you</p>
+      </div>
+    </div>
+    
+    <div id="btns" class="btns">
+      <label class="btn">
+        <input id="aBtn" data-choice="a" type="radio" name="answerBtns">
+        <span class="checkmark opt">A</span>
+      </label>
+      <label class="btn">
+        <input id="bBtn" data-choice="b" type="radio" name="answerBtns">
+        <span class="checkmark opt">B</span>
+      </label>
+      <label class="btn">
+        <input id="cBtn" data-choice="c" type="radio" name="answerBtns">
+        <span class="checkmark opt">C</span>
+      </label>
+      <label class="btn btnNext">
+        <input id="next" type="button" name="answerBtns">
+        <span class="checkmark">►</span>
+      </label>
+      <button id="restart" class="restart"><span class="material-symbols-outlined">
+        refresh
+        </span></button>
+    </div>
+    <!-- <span class="tooltiptext" id="myTooltip">Wybierz odpowiedź!</span> -->
+  </div>
+  <!-- <button onclick="()=>{}" >Reset</button> -->
+  <script src="script.js"></script>
+</body>
+</html>
