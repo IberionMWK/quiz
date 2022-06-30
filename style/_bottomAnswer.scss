@@ -1,0 +1,103 @@
+.btns {
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  justify-content: space-around;
+  margin: 3rem 1rem;
+  .btn {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    transition: 0.3s;      
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    span {
+      display: block;
+      background-color: $whiteBtnBG;
+      color: $blackInactiveFont;
+      font-weight: 600;
+      width: 65px;
+      text-align: center;
+      font-size: 1.3rem;
+      padding: 1rem 1.5rem;
+      border-radius: 40%;
+      box-shadow: inset 0px 0px 1px -2px $secondaryColorBG, 0px 3px 9px -8px $shadowBtn;
+      transition: ease-out .1s;
+
+      &:hover {
+        box-shadow: inset 0px 0px 0px 3px  $secondaryColorBG, 0px 3px 9px -8px $shadowBtn;
+        color: $blackActiveFont;
+      }
+    }
+    
+    span.opt {
+      -webkit-animation-duration: 0.6s;
+              animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes blink {
+      0% {background-color: $whiteBtnBG;}
+      16% {background-color: $warningBtn;}
+      33% {background-color: $whiteBtnBG;}
+      50% {background-color: $warningBtn;}
+      67% {background-color: $whiteBtnBG;}
+      83% {background-color: $warningBtn;}
+      100% {background-color: $whiteBtnBG;}
+    }
+
+    @keyframes blink {
+      0% {background-color: $whiteBtnBG;}
+      16% {background-color: $warningBtn;}
+      33% {background-color: $whiteBtnBG;}
+      50% {background-color: $warningBtn;}
+      67% {background-color: $whiteBtnBG;}
+      83% {background-color: $warningBtn;}
+      100% {background-color: $whiteBtnBG;}
+    }
+
+
+    input:checked ~ span {
+      box-shadow: inset 0px 0px 20px 20px  $secondaryColorBG, 0px 3px 9px -8px $shadowBtn;
+      color: $blackActiveFont;
+    }
+  }
+
+  .restart {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    transform: translateX(-50%);
+    border: 0;
+    background-color: $whiteBtnBG;
+    color: $blackInactiveFont;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 40%;
+    box-shadow: inset 0px 0px 1px -2px $secondaryColorBG, 0px 3px 9px -8px $shadowBtn;
+    transition: ease-out .3s;
+    .material-symbols-outlined{
+      transform: scaleX(-1);
+    }
+    &:hover {
+      box-shadow: inset 0px 0px 0px 3px  $secondaryColorBG, 0px 3px 9px -8px $shadowBtn;
+      color: $blackActiveFont;
+      .material-symbols-outlined{
+        transform: scaleX(-1) rotate(360deg);
+        transition: 0.3s;
+      } 
+    }
+  }
+}

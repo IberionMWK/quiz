@@ -1,0 +1,45 @@
+.wrap {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  min-height: 550px;
+  background-color: #eceff1;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.301);
+  transition: .1s;
+  overflow: hidden;
+  
+  .title{
+    position: relative;
+    text-align: center;
+    padding: 1.5rem;
+    color: $whiteFont;
+    font-weight: normal;
+    z-index: 4;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: $blueBackground;
+  }
+
+  .progress {
+    position: relative;
+    margin: 20px;
+    height: 15px;
+    border-radius: 11px 11px 11px 11px;
+    background: $blueBackground;
+    overflow: hidden;
+
+    .bar {
+      position: absolute;
+      background-color: $whiteBG;
+      width: 100%;
+      height: 100%;
+      left: 0%;
+      transition: linear .45s;
+    }
+  }
+}

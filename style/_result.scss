@@ -1,0 +1,30 @@
+.resultWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  .result {
+    font-size: 4em;
+    font-weight: 900;
+    color: $secondaryColorBG;
+    text-decoration: underline;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .comment {
+    height: 100px;
+  }
+}
