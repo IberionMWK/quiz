@@ -300,6 +300,7 @@ restartBtn.addEventListener("click", () => {
     btn.style.top = "0px";
   })
   restartBtn.style.top = "-150px";
+  progressBar.style.left = "0";
   renderQuestion()
 });
 

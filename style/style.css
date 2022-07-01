@@ -51,8 +51,8 @@
   background-color: white;
   width: 100%;
   height: 100%;
-  -webkit-transition: linear 0.45s;
-  transition: linear 0.45s;
+  -webkit-transition: linear 0.35s;
+  transition: linear 0.35s;
 }
 
 .questionWrap {
